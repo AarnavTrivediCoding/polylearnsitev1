@@ -5,6 +5,9 @@
         <link rel="stylesheet" href="assets/css/styles.css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <link rel="stylesheet" href="assets/css/responsive-nav.css">
+        <script src="assets/js/responsive-nav.js"></script>
+
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,6 +24,10 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <script src="https://unpkg.com/scrollreveal"></script>
 
@@ -31,36 +38,79 @@
         <div class="hero"> 
             <!-- Header -->
             <header>
+
+
+                
                 <a href="index.html">
-                    <img src="assets/images/logogogo-removebg.png" class="logo" width="630vw" alt="logo">
+                    <img src="assets/images/logogogo-removebg.png" class="logo"  alt="logo">
                 </a>
                 
-                <div class="nav-inner">
+
+
+                <nav>  
+                    <div class="hamburger">
+                        <div class="line1"></div>
+                        <div class="line2"></div>
+                        <div class="line3"></div>
+                    </div>
+
+                    <ul>
+                      <li><a href="#" class="nav-link">Home</a></li>
+                      <li><a href="#" class="nav-link">About</a></li>
+                      <li><a href="#" class="nav-link">Projects</a></li>
+                      <li><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <script> 
+                
+                const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".nav-links");
+const links = document.querySelectorAll(".nav-links li");
+
+hamburger.addEventListener('click', ()=>{
+   //Animate Links
+    navLinks.classList.toggle("open");
+    links.forEach(link => {
+        link.classList.toggle("fade");
+    });
+
+    //Hamburger Animation
+    hamburger.classList.toggle("toggle");
+});
+                </script>
+
+      
+
+                <!-- <div class="nav-inner">
                     <a href="" class="nav-link">About</a>
                     <a href="" class="nav-link">Project PyKids</a>
                     <a href="" class="nav-link">Blog</a>
-                </div>
+                </div> -->
+
+
+
             </header>
 
-                <h1 class="hook">Donate books to<br> learn <span class="auto-type"></span><br></br></h1>
+                <h1 class="hook">Breaking barriers<br> in <span class="auto-type"></span><br></br></h1>
             
 
             <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
             <script> 
-                // var typed = new Typed(".auto-type", {
-                //     strings : ["education.", "learning.", "opportunity.", "resources.", "education."],
-                //     typeSpeed : 130,
-                //     backSpeed : 130, 
-                //     looped :  true
-                // })
-
                 var typed = new Typed(".auto-type", {
-                    strings : ["Python.", "Artificial Intelligence.", "Game Development.", "Web Development."],
+                    strings : ["education.", "learning.", "opportunity.", "resources.", "education."],
                     typeSpeed : 130,
                     backSpeed : 130, 
                     looped :  true
                 })
+
+                // var typed = new Typed(".auto-type", {
+                //     strings : ["Python.", "Artificial Intelligence.", "Game Development.", "Web Development."],
+                //     typeSpeed : 130,
+                //     backSpeed : 130, 
+                //     looped :  true
+                // })
             </script>
 
 
@@ -74,18 +124,20 @@
 
                     <div class="buttonsAndArrow"> 
                         <div class="btn-container">
-                            <a class="btn"><span class="btn-text1">Learn How to Donate</span></a>v
-                            <a class="btn"><span class="btn-text2">Curriculum</span></a>
-                            <a class="btn"><span class="btn-text2">Blog</span></a>
+                            <!-- <a class="btn"><span class="btn-text1">Learn How to Donate</span></a>v -->
+                            <a class="enroll-btn"><span class="btn-text2">Curriculum</span></a>
+                            <a class="enroll-btn"><span class="btn-text2">Blog</span></a>
 
                         </div>
 
-                        <a class="arrow" onClick="document.querySelector('.line-break').scrollIntoView();">↓</a>
+                        <!-- <a class="arrow" onClick="document.querySelector('.line-break').scrollIntoView();">↓</a> -->
                          <!-- h1 class="arrow">↓</h1> -->
                          <!-- <input type="button" onClick="document.getElementById('middle').scrollIntoView();" /> -->
 
 
                     </div>
+
+                    
 
             </div> 
 
@@ -102,10 +154,10 @@
 
 
 
-
+<!-- 
         
         <div class="testimonials">
-            <h1 class="testimonial-text">Students about us  </h1>
+            <h1 class="testimonial-text">Students about us</h1>
                 
  
 
@@ -226,6 +278,52 @@
 
 
 
+
+        <script>
+            // ScrollReveal().reveal(".card-text");
+            ScrollReveal().reveal('.first', { delay: 100 });
+            ScrollReveal().reveal('.second', { delay: 150 });
+            ScrollReveal().reveal('.third', { delay: 200 });
+            ScrollReveal().reveal('.forth', { delay: 250 });
+            ScrollReveal().reveal('.fifth', { delay: 300 });
+
+
+        </script>
+
+        <hr class="line-break">
+
+        <div class="program"> 
+
+                <div class="program-intro>
+
+                    <div class="program-text">
+                        <h1 class="subtitle programSubhead">PyKids Program</h1>
+                        <h1 class="program-head">An immersive learning experience.</h1>
+
+                        <div class="program-info">
+                        
+                            <h3 class="program-subhead">Polylearn provies an <strong>immersive</strong>, live virtual experience that truly connects each student to the content. Not only do the students code, but they learn to bring their <strong>individual passions</strong> to life through projects.</h3>
+
+                            <div class="buttonEnroll"> 
+                                <a class="enroll-btn"><span class="btn-text3">Enroll Today </span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+        </div>
+
+        
+        <script>
+            // ScrollReveal().reveal(".card-text");
+            ScrollReveal().reveal('.program', { delay: 100 });
+
+
+        </script>
+
+        
         <div class="slider"> 
             <div class="slide-track">
 
@@ -250,29 +348,35 @@
             </div>
             
             </div>
-        </div>
-
-        <script>
-            // ScrollReveal().reveal(".card-text");
-            ScrollReveal().reveal('.first', { delay: 100 });
-            ScrollReveal().reveal('.second', { delay: 150 });
-            ScrollReveal().reveal('.third', { delay: 200 });
-            ScrollReveal().reveal('.forth', { delay: 250 });
-            ScrollReveal().reveal('.fifth', { delay: 300 });
-
-
-        </script>
-
-        <hr class="line-break">
-
-        <div class="program"> 
-
-            <h1 class="subtitle">Program</h1>
-
-        </div>
+        </div> -->
     
 
 
+        <!-- Put this right before the </body> closing tag -->
+        <script>    
+
+        
+        var nav = responsiveNav(".nav-collapse");
+        </script>
     </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
