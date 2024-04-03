@@ -44,42 +44,17 @@
                 <a href="index.html">
                     <img src="assets/images/logogogo-removebg.png" class="logo"  alt="logo">
                 </a>
+
                 
 
-
-                <nav>  
-                    <div class="hamburger">
-                        <div class="line1"></div>
-                        <div class="line2"></div>
-                        <div class="line3"></div>
-                    </div>
-
                     <ul>
-                      <li><a href="#" class="nav-link">Home</a></li>
+                      <li><a href="index.html" class="nav-link">Home</a></li>
+                      <li><a href="Curriculum.html" class="nav-link">Project PyKids</a></li>
                       <li><a href="#" class="nav-link">About</a></li>
-                      <li><a href="#" class="nav-link">Projects</a></li>
-                      <li><a href="#" class="nav-link">Contact</a></li>
                     </ul>
                 </nav>
 
-                <script> 
-                
-                const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".nav-links");
-const links = document.querySelectorAll(".nav-links li");
-
-hamburger.addEventListener('click', ()=>{
-   //Animate Links
-    navLinks.classList.toggle("open");
-    links.forEach(link => {
-        link.classList.toggle("fade");
-    });
-
-    //Hamburger Animation
-    hamburger.classList.toggle("toggle");
-});
-                </script>
-
+            
       
 
                 <!-- <div class="nav-inner">
@@ -92,6 +67,9 @@ hamburger.addEventListener('click', ()=>{
 
             </header>
 
+            <a href="index.html">
+                <img src="assets/images/PolylearnPics/hamburger-removebg-preview.png" class="hamburgerPic"  alt="logo">
+            </a>
                 <h1 class="hook">Breaking barriers<br> in <span class="auto-type"></span><br></br></h1>
             
 
@@ -117,6 +95,8 @@ hamburger.addEventListener('click', ()=>{
 
             <div class="hero-content">
                     <h3 class="hero-subhead">Polylearn is <strong>dedicated</strong> to bolstering the <strong>welfare</strong> of the general public through service projects and classes that aim to <span class = "text-span"> increase educational opportunities. </span></h3>
+             
+             
                     <!-- <h3 class="hero-subhead2">Click the <strong>Coding Class</strong> and <strong>Blog</strong> buttons below to view our current projects.</h3> -->
                     <!-- <h3 class="hero-subhead">Polylearn is <strong>dedicated</strong> to bolstering the welfare of the general public by providing high-quality programming instruction in exchange for unused <strong>books</strong>, <strong>educational supplements</strong> and <strong>monetary donations</strong>. <br> <br> Donations are then <strong>provided</strong> to local <strong>libraries</strong>, <strong>Title-1 Schools</strong> and those in <strong>underserved</strong> communities in order to <span class = "text-span"> increase educational opportunities. </span> Your child will then be invited to join our live programming classes that teach a wide range of curriculum, click the buttons below or scroll to learn more.</h3> -->
                     
@@ -154,7 +134,7 @@ hamburger.addEventListener('click', ()=>{
 
 
 
-<!-- 
+
         
         <div class="testimonials">
             <h1 class="testimonial-text">Students about us</h1>
@@ -241,7 +221,7 @@ hamburger.addEventListener('click', ()=>{
         </div>
 
 
-
+ 
         <script>
             // ScrollReveal().reveal(".card-text");
             ScrollReveal().reveal('.testimonial-text', { delay: 120 });
@@ -255,6 +235,9 @@ hamburger.addEventListener('click', ()=>{
 
          </script>
 
+       
+        </div> 
+    
         <div class="card"> 
             <div class="info"> 
                 <h1 class="card-text">50+</h1>
@@ -294,15 +277,15 @@ hamburger.addEventListener('click', ()=>{
 
         <div class="program"> 
 
-                <div class="program-intro>
+                <div class="program-intro">
 
                     <div class="program-text">
                         <h1 class="subtitle programSubhead">PyKids Program</h1>
                         <h1 class="program-head">An immersive learning experience.</h1>
 
                         <div class="program-info">
-                        
-                            <h3 class="program-subhead">Polylearn provies an <strong>immersive</strong>, live virtual experience that truly connects each student to the content. Not only do the students code, but they learn to bring their <strong>individual passions</strong> to life through projects.</h3>
+                         
+                           <h3 class="program-subhead subheadSpec">Polylearn provies an <strong>immersive</strong>, live virtual experience that truly connects each student to the content. Not only do the students code, but they learn to bring their <strong>individual passions</strong> to life through projects.</h3>
 
                             <div class="buttonEnroll"> 
                                 <a class="enroll-btn"><span class="btn-text3">Enroll Today </span></a>
@@ -311,6 +294,51 @@ hamburger.addEventListener('click', ()=>{
                     </div>
 
                 </div>
+
+                <div class="program-content"> 
+
+                    <div class="program-box"> 
+
+                        <a href="index.html">
+                            <img src="assets/images/PolylearnPics/pythonPhoto.png" class="programPhoto1"  alt="logo" ax-width="600px">
+                        </a>
+                        <!-- Image -->
+
+                        <h1 class="program-subhead programLabel">PyKids Program Number 1</h1>
+                        
+                        
+                        <h3 class="program-subhead" id="polytext">Polylearn provies an <strong>immersive</strong>, live virtual experience that truly connects each student to the content.</h3>
+                        
+                        <!-- <h3 class="program-subhead infobox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h3> -->
+                
+                        </h3>
+                    </div>
+
+
+                    <div class="program-box"> 
+
+                        <a href="index.html">
+                            <img src="assets/images/PolylearnPics/pygamePhoto.png" class="programPhoto2"  alt="logo" >
+                        </a>
+                        <!-- Image -->
+                        <div class="program-box"> 
+
+                        <h1 class="program-subhead programLabel">PyKids Program Number 2</h1>
+                        
+                        <h3 class="program-subhead" id="polytext">Polylearn provies an <strong>immersive</strong>, live virtual experience that truly connects each student to the content.</h3>
+
+                        <!-- <h3 class="program-subhead infobox">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</h3> -->
+
+
+                    </div>
+
+
+
+
+
+
+                </div>
+
 
 
         </div>
@@ -323,41 +351,57 @@ hamburger.addEventListener('click', ()=>{
 
         </script>
 
-        
-        <div class="slider"> 
+       
+        <!-- <div class="slider"> 
             <div class="slide-track">
 
-            <div class="slide first">
-                <img src="assets/images/PolylearnPics/Pic1.png" class="slideimg">
-            </div>
-            
-            <div class="slide second">
-                <img src="assets/images/PolylearnPics/Pic2.png" class="slideimg">
-            </div>
+                <div class="slide first">
+                    <img src="assets/images/PolylearnPics/Pic1.png" class="slideimg">
+                </div>
+                
+                <div class="slide second">
+                    <img src="assets/images/PolylearnPics/Pic2.png" class="slideimg">
+                </div>
 
-            <div class="slide third">
-                <img src="assets/images/PolylearnPics/Pic3.png" class="slideimg">
-            </div>
+                <div class="slide third">
+                    <img src="assets/images/PolylearnPics/Pic3.png" class="slideimg">
+                </div>
 
-            <div class="slide forth">
-                <img src="assets/images/PolylearnPics/Pic4.png" class="slideimg">
-            </div>
+                <div class="slide forth">
+                    <img src="assets/images/PolylearnPics/Pic4.png" class="slideimg">
+                </div>
 
-            <div class="slide fifth">
-                <img src="assets/images/PolylearnPics/Pic5.png" class="slideimg">
-            </div>
-            
+                <div class="slide fifth">
+                    <img src="assets/images/PolylearnPics/Pic5.png" class="slideimg">
+                </div>
+                
             </div>
         </div> -->
-    
 
-
-        <!-- Put this right before the </body> closing tag -->
         <script>    
 
         
         var nav = responsiveNav(".nav-collapse");
-        </script>
+        </script> 
+
+
+
+        <hr class="line-break">
+
+        <div class="contact">
+            <h1 class="subtitle programSubhead">Contact</h1>
+            <h1 class="program-head">Get in touch.</h1>
+
+            <h3
+
+
+
+
+
+
+
+        </div>
+
     </body>
 
 </html>
